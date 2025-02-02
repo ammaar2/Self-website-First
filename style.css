@@ -1,0 +1,163 @@
+/* Code write :@jokerpython3 */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom right, #e0f7fa, #80deea); /* Smooth gradient */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  direction: ltr;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding: 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left {
+  flex: 1;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.left h1 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow effect */
+}
+
+.left p {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.6;
+}
+
+.right {
+  flex: 1;
+  text-align: center;
+}
+
+.right img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #2c3e50;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.social-links {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.social-links a {
+  font-size: 2.5em;
+  color: #fff;
+  background-color: #3498db;
+  padding: 15px;
+  border-radius: 50%;
+  margin: 0 15px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
+
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  width: 250px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card i {
+  font-size: 3em;
+  color: #fff;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #3498db;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  font-size: 1.5em;
+  color: #2c3e50;
+}
+
+.card p {
+  font-size: 1em;
+  color: #555;
+}
+
+.html-card {
+  background-color: #f39c12;
+}
+
+.css-card {
+  background-color: #2ecc71;
+}
+
+.python-card {
+  background-color: #f39c12;
+}
+
+.php-card {
+  background-color: #34495e;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .left h1 {
+    font-size: 2em;
+  }
+
+  .left p {
+    font-size: 1em;
+  }
+
+  .right img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .social-links a {
+    font-size: 2em;
+    padding: 12px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
